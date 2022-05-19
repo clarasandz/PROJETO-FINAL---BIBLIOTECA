@@ -11,6 +11,7 @@ PARTICIPANTES:
 - Bárbara Casrtro Barros Silva
 
 OBJETIVOS GERAIS e JUSTIFICATIVA
+
 Nós sabemos que o sistema de organização da biblioteca do instituto já é bem estruturado, mas nós queremos automatizar e melhorar a comunicação entre o estudante e a biblioteca. Com isso, seria vantajoso para a equipe, aumentar a utilização do espaço pelos estudantes.
 - Criar um sistema de organização da biblioteca do campus do IFBA;
 - Organizar os livros da biblioteca;
