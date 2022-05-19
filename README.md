@@ -34,5 +34,5 @@ AÇÕES A SEREM TOMADAS
 * Maria Clara Andrade -- Responsável por entrevistar o cliente e por atualizar o GitHub;
 * Carlos André Gonçalves -- Responsável pelo código fonte e por atualizar o GitHub;
 * José Rômulo Silvany -- Responsável pelo código fonte;
-* Maria Eduarda Pinheiro -- Responsável por etrevistar os usuários da biblioteca;
+* Maria Eduarda Pinheiro -- Responsável por entrevistar os usuários da biblioteca;
 * Bárbara Castro -- Responsável pela revisão das fontes coletadas
