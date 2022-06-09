@@ -18,6 +18,13 @@ Nós sabemos que o sistema de organização da biblioteca do instituto já é be
 - Organizar o empréstimo dos livros;
 - Organizar a forma de devolução dos livros emprestados
 
+FUNCIONALIDADES
+- Cadastrar a pessoa (aluno/servidor);
+- Realizar os empréstimos dos livros;
+- Cobrar livros atrasados;
+- Multar pessoas que estão com livros atrasados;
+- Verificar estoque dos livros;
+
 REUNIÃO COM O CLIENTE
 - A reunião com o cliente foi realizada no dia 19/05/2022, na biblioteca do Campus do IFBA. 
 - Entrevistado: Bibliotecário Jorge
