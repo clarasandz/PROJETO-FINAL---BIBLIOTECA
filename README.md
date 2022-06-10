@@ -4,7 +4,7 @@ ATA DE REUNIÃO
 ETAPA 1
 
 PARTICIPANTES:
-- Carlos André Gonçalves Pereira Santos;
+- Carlos André Gonçalves Pereira Santana;
 - Maria Clara Santos Andrade;
 - Maria Eduarda Pinheiro Santos;
 - José Rômulo Silvany Costa;
