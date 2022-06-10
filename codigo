@@ -1,0 +1,105 @@
+// método que exibe o menu principal do sistema
+public void menuPrincipal(){
+  Scanner entrada = new Scanner(System.in);
+     
+  while(true){  
+    limparTela();
+    System.out.println("\n:: B I B L I O T E C A ::\n");
+    System.out.println("Bem-vindo(a) ao sistem. 
+      Escolha a opção desejada");
+    System.out.println("1 - Livros");
+    System.out.println("2 - Autores");
+    System.out.println("3 - Editoras");
+    System.out.println("4 - Usuários");
+    System.out.println("5 - Empréstimos");
+    System.out.println("6 - Multas");
+    System.out.println("7 - Sair");
+    System.out.print("Sua opção: ");
+    // lê a opção do usuário 
+    int opcao = Integer.parseInt(entrada.nextLine()); 
+     
+    switch(opcao){
+      case 1:
+        // chama o menu de gerenciamento de livros
+        menuGerenciarLivros(); 
+        break;
+       
+      case 2:
+        // chama o menu de gerenciamento de autores
+        menuGerenciarAutores(); 
+        break;
+       
+      case 3:
+        // chama o menu de gerenciamento de editoras
+        menuGerenciarEditoras();
+        break;
+       
+      case 4:
+        // chama o menu de gerenciamento de usuários
+        menuGerenciarUsuarios(); 
+        break;
+       
+      case 5:
+        // chama o menu de gerenciamento de emprestimos
+        menuGerenciarEmprestimos();
+        break;
+         
+      case 6:
+        // chama o menu de gerenciamento de multas
+        menuGerenciarMultas();
+        break;
+       
+      case 7:
+        System.out.println("\nObrigado por usar o 
+          Sistema de Biblioteca\n");  
+        System.exit(0);
+    }
+  }
+}
+
+// menu para cadastrar, listar, pesquisar, excluir  e atualizar os usuários da biblioteca
+public int menuGerenciarUsuarios(){ 
+  Usuario temp; // serve para várias operações neste menu
+  // serve para as pesquisas dos usuários
+  String pesquisaUsuario;
+  Scanner entrada = new Scanner(System.in);
+     
+  // mostra o menu de forma repetitiva até o usuário usar a opção de sair
+  while(true){
+    limparTela();
+    System.out.println("\n:: G E R E N C I A R   U S U Á R I O S ::\n");
+    System.out.println("Escolha a opção desejada");
+    System.out.println("1 - Novo Usuário");
+    System.out.println("2 - Listar Usuários");
+    System.out.println("3 - Pesquisar Usuário");
+    System.out.println("4 - Excluir Usuário");
+    System.out.println("5 - Atualizar Usuário");
+    System.out.println("6 - Voltar Menu Anterior");
+    System.out.print("Sua opção: ");
+    // lê a opção do usuário
+    int opcao = Integer.parseInt(entrada.nextLine()); 
+     
+    switch(opcao){
+      case 1: // vamos cadastrar um novo usuário
+        System.out.print("\nNome: ");
+        String nomeUsuario = entrada.nextLine();
+        System.out.print("Idade: ");
+        int idadeUsuario = Integer.parseInt(entrada.nextLine());
+        System.out.print("Sexo: ");
+        char sexoUsuario = entrada.nextLine().charAt(0);
+         
+        // contador de usuários
+        Usuario.contadorUsuarios++;
+         
+        // novo objeto da classe Usuario
+        Usuario u = new Usuario(Usuario.contadorUsuarios,
+          nomeUsuario, idadeUsuario, sexoUsuario);
+        // e o adicionamos no ArrayList de usuários
+        usuarios.add(u);
+         
+        // mensagem de sucesso.
+        System.out.println("\nO usuário foi cadastrado com sucesso");
+        salvarDadosArquivo(); // salva os dados no arquivo
+         
+        break;
+        ...
